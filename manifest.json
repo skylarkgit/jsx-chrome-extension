@@ -1,0 +1,16 @@
+{
+    "name": "JSX Chrome Extension",
+    "description": "Example JSX Based Chrome Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "*://github.com/skylarkgit/jsx-chrome-extension/*"
+            ],
+            "js": [
+                "build/bundle.js"
+            ]
+        }
+    ]
+}
